@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+mainClassName = "com.vvlasov.playground.rest.Launcher"
+
+dependencies {
+    compile "io.vertx:vertx-core:${version_vertx}"
+    compile "io.vertx:vertx-web:${version_vertx}"
+    compile "io.vertx:vertx-zookeeper:${version_vertx}"
+
+    //Akka
+    compile "com.typesafe.akka:akka-http-experimental_${version_scala_binary}:${version_akka_streams}"
+    compile "com.typesafe.akka:akka-http-spray-json-experimental_${version_scala_binary}:${version_akka_streams}"
+    compile "com.typesafe.akka:akka-http-xml-experimental_${version_scala_binary}:${version_akka_streams}"
+    compile "org.scala-lang:scala-library:${version_scala}"
+    compile "org.scala-lang.modules:scala-xml_${version_scala_binary}:1.0.3"
+    compile "org.scala-lang:scala-library:${version_scala}"
+
+    testCompile "com.typesafe.akka:akka-http-testkit-experimental_${version_scala_binary}:${version_akka_streams}"
+    testCompile "org.scalatest:scalatest_${version_scala_binary}:${version_scalatest}"
+
+    //RestQL
+    compile "com.b2wdigital:restql-core-java:2.2.1"
+
+    compile "com.google.guava:guava:${version_guava}"
+    compile "com.google.inject:guice:${version_guice}"
+    compile "org.slf4j:slf4j-api:1.7.25"
+    compile "org.apache.logging.log4j:log4j-slf4j-impl:2.10.0"
+
+    compile "org.projectlombok:lombok:${version_lombok}" //code generation during compile phase
+
+    testCompile "junit:junit:${version_junit}"
+    testCompile "com.github.tomakehurst:wiremock:${version_wiremock}"
+    testCompile "io.dropwizard:dropwizard-testing:${version_dropwizard}"
+}

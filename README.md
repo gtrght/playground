@@ -1,0 +1,1 @@
+![build status](https://api.travis-ci.org/gtrght/playground.svg?branch=dev)
