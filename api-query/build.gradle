@@ -11,15 +11,8 @@ dependencies {
     compile "io.vertx:vertx-zookeeper:${version_vertx}"
 
     //Akka
-    compile "com.typesafe.akka:akka-http-experimental_${version_scala_binary}:${version_akka_streams}"
-    compile "com.typesafe.akka:akka-http-spray-json-experimental_${version_scala_binary}:${version_akka_streams}"
-    compile "com.typesafe.akka:akka-http-xml-experimental_${version_scala_binary}:${version_akka_streams}"
-    compile "org.scala-lang:scala-library:${version_scala}"
-    compile "org.scala-lang.modules:scala-xml_${version_scala_binary}:1.0.3"
-    compile "org.scala-lang:scala-library:${version_scala}"
-
-    testCompile "com.typesafe.akka:akka-http-testkit-experimental_${version_scala_binary}:${version_akka_streams}"
-    testCompile "org.scalatest:scalatest_${version_scala_binary}:${version_scalatest}"
+    compile "com.typesafe.akka:akka-http_${version_scala_binary}:${version_akka_http}"
+    testCompile "com.typesafe.akka:akka-http-testkit_${version_scala_binary}:${version_akka_http}"
 
     //RestQL
     compile "com.b2wdigital:restql-core-java:2.2.1"
