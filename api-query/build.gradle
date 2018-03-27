@@ -23,6 +23,7 @@ dependencies {
     compile "org.apache.logging.log4j:log4j-slf4j-impl:2.10.0"
 
     compile "org.projectlombok:lombok:${version_lombok}" //code generation during compile phase
+    compile "io.reactivex.rxjava2:rxjava:2.0.7"
 
     testCompile "junit:junit:${version_junit}"
     testCompile "com.github.tomakehurst:wiremock:${version_wiremock}"

@@ -46,6 +46,7 @@ public class AkkaApplicationServer extends HttpApp implements Application {
                 get(() -> route1),
                 get(() -> route2),
                 post(() -> complete(UNSUPPORTED_METHOD_RESPONSE))
+
         );
     }
 }
